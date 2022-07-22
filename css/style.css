@@ -2,10 +2,14 @@
 @import "./webkits.css";
 @import "./reset.css";
 body {
-  font-family: "Nanum Gothic", sans-serif;
   background-color: rgb(58, 58, 58);
   color: rgb(240, 240, 240);
   padding-left: 10px;
+}
+
+* {
+  font-family: "Nanum Gothic", sans-serif;
+  color: rgb(240, 240, 240);
 }
 
 #itemList {
@@ -25,7 +29,15 @@ body {
 }
 
 .menuBar {
+  display: flex;
+  align-items: center;
   margin-top: 10px;
+}
+.menuBar span {
+  margin-right: 10px;
+}
+.menuBar .btn__style {
+  margin-right: 10px;
 }
 
 .item-input {
@@ -34,7 +46,7 @@ body {
   border: 0;
   background-color: rgb(139, 139, 139);
   margin-top: 10px;
-  color: beige;
+  color: rgb(240, 240, 240);
 }
 
 .item-input:focus {
@@ -42,7 +54,7 @@ body {
 }
 
 .item-input::placeholder {
-  color: white;
+  color: rgb(240, 240, 240);
 }
 
 .item-input__count {
@@ -64,4 +76,49 @@ body {
 
 .main-title {
   font-size: 40px;
+}
+
+.item--container {
+  display: flex;
+}
+
+#memo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.memo--textarea {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0;
+  background-color: rgb(94, 94, 94);
+  resize: none;
+}
+
+.memo--textarea:focus {
+  outline: none;
+}
+.memo--textarea::placeholder {
+  color: rgb(240, 240, 240);
+}
+
+.btn__style {
+  border: none;
+  background: linear-gradient(to bottom, #f3c877, #766139);
+  border-radius: 50px;
+  color: #f5f2cd;
+}
+.btn__style {
+  border: none;
+  background: linear-gr adient(to bottom, #f3c877, #766139);
+  border-radius: 50px;
+  color: #f5f2cd;
+}
+
+#save-memo--btn {
+  margin-top: 10px;
 }

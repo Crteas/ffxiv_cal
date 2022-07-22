@@ -2,11 +2,20 @@ const itemList = document.getElementById("itemList");
 const menu = document.querySelector(".menuBar");
 const menuBtn = menu.querySelector("button");
 const menuCounter = menu.querySelector("span:last-child");
+const saveMemoBtn = document.getElementById("save-memo--btn");
+const memoArea = document.querySelector(".memo--textarea");
 
 let allValue = 0;
 let maxCount = 0;
 
-const formContent = () => {
+const loadMemo = () => {
+  const memo = localStorage.getItem("memo");
+  return memo;
+};
+
+memoArea.value = loadMemo();
+
+const paintContent = () => {
   const newForm = document.createElement("form");
   const itemNameInput = document.createElement("input");
   const itemCountInput = document.createElement("input");
@@ -40,11 +49,17 @@ function createForm() {
     menuBtn.disabled = true;
     return;
   }
-  formContent();
+  paintContent();
   maxCount += 1;
 }
-
 createForm();
+
+memoArea.addEventListener("change", () => {
+  localStorage.setItem("memo", memoArea.value);
+});
+saveMemoBtn.addEventListener("click", () => {
+  localStorage.setItem("memo", memoArea.value);
+});
 
 itemList.addEventListener("change", () => {
   const a = itemList.querySelectorAll("form span");

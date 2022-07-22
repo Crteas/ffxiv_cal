@@ -9,16 +9,22 @@
   </head>
   <body>
     <h1 class="main-title">엄청난 계산기</h1>
-    <div id="itemList">
-      <div class="item-tag">
-        <span>이름</span>
-        <span>갯수</span>
-        <span>가격</span>
+    <div class="item--container">
+      <div id="itemList">
+        <div class="item-tag">
+          <span>이름</span>
+          <span>갯수</span>
+          <span>가격</span>
+        </div>
+      </div>
+      <div id="memo">
+        <textarea class="memo--textarea" placeholder="메모장입니다"></textarea>
+        <button id="save-memo--btn" class="btn__style">SAVE</button>
       </div>
     </div>
     <div>크리스탈 넣어랏</div>
     <div class="menuBar">
-      <button>늘리기</button>
+      <button class="btn__style">늘리기</button>
       <span>가격 : </span>
       <span>0 길</span>
     </div>
