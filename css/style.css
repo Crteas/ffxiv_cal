@@ -97,6 +97,7 @@ body {
   border: 0;
   background-color: rgb(94, 94, 94);
   resize: none;
+  line-height: 15px;
 }
 
 .memo--textarea:focus {
