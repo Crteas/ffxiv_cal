@@ -21,6 +21,7 @@ body {
   padding-left: 10px;
   padding-top: 10px;
   background-color: rgb(94, 94, 94);
+  overflow: hidden;
 }
 
 .item-form {
@@ -47,6 +48,7 @@ body {
   background-color: rgb(139, 139, 139);
   margin-top: 10px;
   color: rgb(240, 240, 240);
+  line-height: 15px;
 }
 
 .item-input:focus {
@@ -122,4 +124,12 @@ body {
 
 #save-memo--btn {
   margin-top: 10px;
+}
+
+.item-input__crystal--count {
+  width: 50px;
+}
+
+.item-input__crystal--price {
+  width: 70px;
 }

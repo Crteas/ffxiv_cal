@@ -18,16 +18,56 @@
         </div>
       </div>
       <div id="memo">
-        <textarea class="memo--textarea" placeholder="메모장입니다"></textarea>
+        <textarea
+          class="memo--textarea"
+          spellcheck="false"
+          placeholder="메모장입니다"
+        ></textarea>
         <button id="save-memo--btn" class="btn__style">SAVE</button>
       </div>
     </div>
-    <div>크리스탈 넣어랏</div>
+
     <div class="menuBar">
       <button class="btn__style">늘리기</button>
       <span>가격 : </span>
       <span>0 길</span>
     </div>
+
+    <div id="crystal_container">
+      <div id="crystal1">
+        <span>크리스탈1</span>
+        <input
+          class="item-input item-input__crystal--count"
+          placeholder="갯수"
+          type="number"
+          min="0"
+          max="99"
+        />
+        <input
+          class="item-input item-input__crystal--price"
+          placeholder="가격"
+          type="number"
+        />
+        <span>0</span>
+      </div>
+      <div id="crystal2">
+        <span>크리스탈2</span>
+        <input
+          class="item-input item-input__crystal--count"
+          placeholder="갯수"
+          type="number"
+          min="0"
+          max="99"
+        />
+        <input
+          class="item-input item-input__crystal--price"
+          placeholder="가격"
+          type="number"
+        />
+        <span>0</span>
+      </div>
+    </div>
+
     <script src="./app.js"></script>
   </body>
 </html>
